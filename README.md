@@ -8,7 +8,7 @@ This plugin create github pull request url from commit hash in current line.
 
 ## Installation
 ```lua
-use { 'mitubaEX/to_github_target_pull_request_from_comm
+use { 'mitubaEX/to_github_target_pull_request_from_commit_hash.nvim' }
 ```
 
 ## Usage
