@@ -30,7 +30,7 @@ local function to_github_target_pull_request_from_commit_hash()
   end
 
   local command_to_get_pr_number = 'git log --merges --oneline --reverse --ancestry-path' .. ' ' .. current_line_commit_hash .. '...develop'
-  local target_pr_number = run(command_to_get_pr_number .. '|' .. 'grep -o "#[0-9]*" -m 1', 'sed s/#//g')
+  local target_pr_number = run(command_to_get_pr_number .. '|' .. 'grep -o "#[0-9]*" -m 1' .. '|' .. 'sed s/#//g')
   local pr_url = github_url .. '/' .. username .. '/' .. repo .. '/' .. 'pull' .. '/' .. target_pr_number
   print(pr_url)
 end
