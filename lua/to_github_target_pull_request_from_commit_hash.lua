@@ -5,7 +5,7 @@ local function run(command)
   local result = handle:read("*a")
   handle:close()
 
-  return result
+  return string.gsub(result, '\n', '')
 end
 
 local function to_github_target_pull_request_from_commit_hash()
