@@ -12,8 +12,10 @@ use { 'mitubaEX/to_github_target_pull_request_from_comm
 ```
 
 ## Usage
-```
+```vim
 :ToGithubTargetPullRequestFromCommitHash
+
+" => https://github.com/hoge/fuga/pull/1111
 ```
 
 ## Development
