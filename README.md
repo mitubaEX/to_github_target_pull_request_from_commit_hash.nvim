@@ -19,12 +19,10 @@ use { 'mitubaEX/to_github_target_pull_request_from_commit_hash.nvim' }
 
 " show pr url of current line
 :ToGithubTargetPullRequestFromCommitHash
-
 " => https://github.com/hoge/fuga/pull/1111
 
 " show pr url of target commit hash
 :ToGithubTargetPullRequestFromCommitHash <commit_hash>
-
 " => https://github.com/hoge/fuga/pull/2222
 ```
 
